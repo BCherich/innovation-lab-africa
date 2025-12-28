@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import InnovationLabAfrica from './InnovationLabAfrica';
@@ -27,4 +28,20 @@ if (!rootElement) {
   );
 }
 
+=======
+import React from 'react';
+import InnovationLabAfrica from './InnovationLabAfrica';
+import AdminCMS from './AdminCMS';
+
+const App = () => {
+  const isAdminRoute = window.location.pathname.startsWith('/admin');
+  
+  if (isAdminRoute) {
+    return <AdminCMS />;
+  }
+  
+  return <InnovationLabAfrica />;
+};
+
+>>>>>>> 2614343d69ac03cc66875b423a5995a61271dd96
 export default App;
